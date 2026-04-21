@@ -1,0 +1,6 @@
+<Files "private.html">
+    AuthType Basic
+    AuthName "Restricted Content"
+    AuthUserFile /path/to/.htpasswd
+    Require valid-user
+</Files>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 3 Demo Site</title>
+  <meta name="google-site-verification" content="1768sRHQGh80tWAANep4K8KFd5cHF56vXa7qU2Fr1W8" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,5 +19,18 @@
 
   <h2>Відкрита інформація</h2>
   <p>Тут розміщена інформація, яка може бути проіндексована.</p>
+
+  <h3>Форма зворотнього зв'язку (захищена RECAPTCHA)</h3>
+  <form action="#" method="POST">
+    <label for="name">Ваше ім'я:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="message">Повідомлення:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+    <!-- Dummy Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="валюта_вашого_сайту_site_key"></div>
+    <br>
+    <input type="submit" value="Відправити">
+  </form>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
